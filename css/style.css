@@ -1,0 +1,209 @@
+/* import fonts */
+@font-face {
+    font-family: "castlel";
+    src: url("../fonts/CASTLEL.TTF");
+}
+@font-face {
+    font-family: "CastleT Bold_0";
+    src: url("../fonts/CastleT\ Bold_0.ttf");
+}
+@font-face{
+    font-family: "CastleT Bold";
+    src: url("../fonts/CastleT\ Bold.ttf");
+}
+@font-face {
+    font-family: "CastleT_0";
+    src: url("../fonts/CastleT_0.ttf");
+}
+@font-face {
+    font-family: "CastleT";
+    src: url("../fonts/CastleT.ttf");
+}
+@font-face{
+    font-family: "CastleT_TUlt";
+    src: url("../fonts/CastleTUlt_1.ttf");
+}
+/* end font face */
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+/* header imgage */
+.container{
+    max-width: 1229px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header-section{
+    margin-bottom: 2em;
+}
+/* image container */
+.img-container{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+}
+.text-container > img {
+    width: 100%;
+    margin: 0 auto;
+}
+.desktop-img{
+    display: block;
+}
+.mobile-img{
+    display: none;
+}
+/* image body */
+.img-body {
+    display: flex;
+    margin: -23em 0 0 2em;
+}
+/* text container */
+.text-container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.img-body >.text-container > h1 {
+    font-family: 'castlel';
+    color: red;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+.img-body >.text-container > p {
+    color: #666;
+    font-size: 19px;
+}
+
+/* img brochure */
+/* .img-body > .btn-brochure >img {   */
+.img-body > .text-container > img {  
+    margin: -43px 0 0 56.5em;
+    width: 265px;
+}
+/* left image container */
+.left-img-container, .right-img-container{
+margin: 2em 0 1em 0;
+display:flex;
+/* height: 321px; */
+width: 100%;
+padding: 2px;
+}
+.left-img >img{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.right-img >img{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.text {
+    padding: 40px 0 20px 60px;
+    width: 100%;
+}
+.left-img-border-line{
+    border-top: .5px solid;
+    border-right: .5px solid;
+    border-bottom: .5px solid;
+    border-color: rgba(102, 102, 102, 0.411);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/* .right-img {
+    margin: 1em;
+} */
+.right-img-border-line{
+    border-top: .5px solid;
+    border-left: .5px solid;
+    border-bottom: .5px solid;
+    border-color: rgba(102, 102, 102, 0.411);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.text > h2{
+    font-family:'Castlel' ;
+    padding: 0 0 .5em 0;
+    font-size: 33px;
+}
+.text > ul{
+    font-family:'Castlel' ;
+    line-height: 1.5em;
+    font-size: 19px;
+}
+.text >ul > li{
+    color: #666;
+}
+.text > p{
+    margin-right: 54px;
+    font-family: 'castlel';
+    color: #666;
+    font-size: 18px;
+}
+
+
+/* mobile view */
+@media screen and (max-width: 640px){
+    .header-section{
+        height: auto;
+    }
+    .desktop-img{
+        display: none;
+    }
+    .desktop-img img {
+        width: 100% !important;
+    }
+    .mobile-img{
+        display: block;
+        width: 640px;
+    }
+    .img-body{
+        flex-direction: row;
+    }
+    .text-container{
+        width: 100%;
+        padding-right: 1.5em;
+    }
+    
+    .btn-brochure {
+        display: flex;
+        
+    }
+    .img-body > .text-container > img {
+        margin: 36px 170px 27px;
+        width: 265px;
+    }
+    /* heading */
+    .left-img-container >.text >h2{
+        padding-bottom: 6em;
+    }
+    /* paragraph */
+    .left-img-container> .text > ul {
+        margin-left: -18em;
+    }
+    .right-img-container > .text > h2{
+        height: 10em;
+        text-align: left;
+        width: 50%;
+        margin-left: 9em;
+    }
+    .right-img-container> .text > ul {
+        text-align: left;
+    }
+    .text > p {
+        margin-right: 54px;
+        margin-left: -20em;
+        font-family: 'castlel';
+        color: #666;
+        font-size: 18px;
+        margin-top: 2em;
+    }
+    .right-img-container .right-img img {
+        margin-left: -39.9em;
+        border-radius: 15px 0 0 15px;
+    }
+
+}
